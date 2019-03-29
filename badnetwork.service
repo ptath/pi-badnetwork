@@ -1,0 +1,10 @@
+[Unit]
+Description=Bad Network Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/bin/bash /home/pi/scripts/badnetwork.sh
+
+[Install]
+WantedBy=multi-user.target
