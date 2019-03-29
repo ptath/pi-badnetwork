@@ -19,7 +19,7 @@ chmod +x ~/scripts/badnetwork.sh
 echo " Done!"
 
 # Installing badnetwork.sh as systemd service
-read -n 1 -p " Install script as systemd service and reboot? (Y/n): " choice
+read -n 1 -p " Install script as systemd service? (Y/n): " choice
 case $choice in
   y|Y )
     echo " Yes"
@@ -29,8 +29,8 @@ case $choice in
     sudo chmod 644 /lib/systemd/system/badnetwork.service
     sudo systemctl daemon-reload
     sudo systemctl enable badnetwork.service
-    echo " Will reboot in 5 sec, press CTRL+C to abort..."
-    sleep 5
+    echo " Will reboot in 10 sec, press CTRL+C to abort..."
+    sleep 10
     sudo reboot now
     ;;
   n|N|* )
