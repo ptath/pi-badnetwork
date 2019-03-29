@@ -1,5 +1,7 @@
 # pi-badnetwork
-Script to check network connection (and reboot Pi/specified service when it up)
+Script to check network connection (and reboot Pi/specified service when it up).
+
+Initially made for restart Homebridge when Wi-Fi restarts or connection lost, because it this situation iOS Home app stops working. Same problem exists with any hap-nodejs service.
 
 ## Installation
 One-line script:
